@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comprador: one
+  producto: one
+  estado_pedido: 1
+  mensaje_inicial: MyText
+  fecha_pedido: 2025-09-24 11:57:41
+  fecha_actualizacion: 2025-09-24 11:57:41
+
+two:
+  comprador: two
+  producto: two
+  estado_pedido: 1
+  mensaje_inicial: MyText
+  fecha_pedido: 2025-09-24 11:57:41
+  fecha_actualizacion: 2025-09-24 11:57:41

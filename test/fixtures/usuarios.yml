@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  telefono: MyString
+  emoji_perfil: MyString
+  contrasena: MyString
+  fecha_registro: 2025-09-24 11:55:25
+
+two:
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  telefono: MyString
+  emoji_perfil: MyString
+  contrasena: MyString
+  fecha_registro: 2025-09-24 11:55:25

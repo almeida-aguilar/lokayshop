@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temp Data Display</title>
+  <style>
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body { font-family: sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+    .container { min-height: 100%; width: 100%; background: #fff; padding: 20px; box-sizing: border-box; }
+    h1, h2 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    h1 { text-align: center; }
+    .data-section { margin-bottom: 40px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+    th { background-color: #f8f8f8; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    pre { background: #eee; padding: 10px; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Visualización de Datos (Temporal)</h1>
+
+    <div class="data-section">
+      <h2>Usuarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @usuarios.any? %>
+              <% @usuarios.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @usuarios.each do |usuario| %>
+            <tr>
+              <% usuario.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Tiendas</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @tiendas.any? %>
+              <% @tiendas.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @tiendas.each do |tienda| %>
+            <tr>
+              <% tienda.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Productos</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @productos.any? %>
+              <% @productos.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @productos.each do |producto| %>
+            <tr>
+              <% producto.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Pedidos</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @pedidos.any? %>
+              <% @pedidos.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @pedidos.each do |pedido| %>
+            <tr>
+              <% pedido.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Reseñas</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @resenas.any? %>
+              <% @resenas.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @resenas.each do |resena| %>
+            <tr>
+              <% resena.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Categorías de Productos</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @categoria_productos.any? %>
+              <% @categoria_productos.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @categoria_productos.each do |cat| %>
+            <tr>
+              <% cat.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h2>Categorías de Tiendas</h2>
+      <table>
+        <thead>
+          <tr>
+            <% if @categoria_tiendas.any? %>
+              <% @categoria_tiendas.first.attributes.keys.each do |key| %>
+                <th><%= key.humanize %></th>
+              <% end %>
+            <% end %>
+          </tr>
+        </thead>
+        <tbody>
+          <% @categoria_tiendas.each do |cat| %>
+            <tr>
+              <% cat.attributes.values.each do |value| %>
+                <td><%= value.to_s %></td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  descripcion: MyText
+  emoji_logo: MyString
+  propetario: one
+  fecha_creacion: 2025-09-24 11:56:46
+  categoria_principal: one
+
+two:
+  nombre: MyString
+  descripcion: MyText
+  emoji_logo: MyString
+  propetario: two
+  fecha_creacion: 2025-09-24 11:56:46
+  categoria_principal: two

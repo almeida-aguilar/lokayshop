@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pedido: one
+  calificacion: 1
+  comentario: MyText
+  fecha_resena: 2025-09-24 11:57:55
+
+two:
+  pedido: two
+  calificacion: 1
+  comentario: MyText
+  fecha_resena: 2025-09-24 11:57:55
